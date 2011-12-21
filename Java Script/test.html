@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="test.css" />
+<script src="test.js"></script>
+</head>
+<body onload="DragHandler.attach (document.getElementById('step1'));
+              DragHandler.attach (document.getElementById('step2'));
+              attachArrow (document.getElementById('step1'), document.getElementById('step2'));">
+<div id="background" class="background">
+<div id="step1" class="step" style="left: 20px; top: 30px">
+  <div id="step1_heading" class="step_heading">Open</div>
+  <div id="step1_status_text" class="step_status_text">Linked Status:</div>
+  <div id="step1_status_name" class="step_status_name">Open</div>
+</div>
+<div id="step2" class="step" style="left: 200px; top: 50px">
+  <div id="step2_heading" class="step_heading">Resolved</div>
+  <div id="step2_status_text" class="step_status_text">Linked Status:</div>
+  <div id="step2_status_name" class="step_status_name">Resolved</div>
+</div>
+<canvas id="arrow" class="arrow"></canvas>
+</body>
+</html>
